@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css" /><!-- This is to link my css to html-->
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/skeleton/2.0.4/skeleton.css"
+      integrity="sha512-5fsy+3xG8N/1PV5MIJz9ZsWpkltijBI48gBzQ/Z2eVATePGHOkMIn+xTDHIfTZFVb9GMpflF2wOWItqxAP2oLQ=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    /> <!-- this is skeleton css gives the form layout look-->
+    <title>Family To Do list</title>
+  </head>
+  <body>
+    <div class="container">
+      <h1>
+        <img src="images/todo.jfif" width = "100"height = "75"><!-- the pics on leftside of title-->
+        <i class="list"><svg
+            xmlns="http://www.w3.org/2000/svg" 
+            enable-background="new 0 0 24 24"
+            height="24px"
+            viewBox="0 0 24 24"
+            width="24px"
+            fill="#0000cd"
+          > <!-- left arrow--> 
+            <rect fill="none" height="24" width="24" />
+            <path d="M19,15l-1.41-1.41L13,18.17V2H11v16.17l-4.59-4.59L5,15l7,7L19,15z"
+            /></svg></i>Family To-Do List
+            <svg
+          xmlns="http://www.w3.org/2000/svg"
+          enable-background="new 0 0 24 24"
+          height="24px"
+          viewBox=" 0 24 24"
+          width="24px"
+          fill="#0000cd"          
+        >
+          <rect fill="none" height="24" width="24" />
+          <path
+            d="M19,15l-1.41-1.41L13,18.17V2H11v16.17l-4.59-4.59L5,15l7,7L19,15z"
+          />
+        </svg><!-- right arrow-->
+        <img src="images/todo.jfif" width = "100" height = "75"><!-- the pics on right side of title-->
+        <hr id = "line1">
+      </h1>
+      <form id="todo-form">
+        <div id="task1">
+          <label for="task">Task to be done</label> <!-- text above label-->
+          <input type="text" id="task" />       
+          </div>
+
+        <div id="worker1">
+         <label for="worker">Person responsible</label> <!-- text above label-->
+         <input type="text" id="worker"  />
+       </div>
+       
+        <div id="date1">
+          <label for="date">Day of task </label> <!-- text above label-->
+          <input type="text" id="date"/>
+        </div>
+
+        <div>
+          <input
+            type="submit"
+            value="Add to List" 
+            
+            id="subtext"
+          />
+        </div>
+      </form>
+      <div id="temp"></div>
+      <table class="u-full-width">
+        <thead>
+          <tr>
+            <th id="job">Task to be done</th> <!-- text above list-->
+            <th id="who">Person responsible</th>
+            <th id="when1">Day of task</th>
+          </tr>
+        </thead>
+        <tbody id="todo-list"></tbody>
+      </table>
+    </div>
+    <script src="script.js"></script> <!-- link to external javascript page-->
+  </body>
+</html>

@@ -1,0 +1,38 @@
+
+
+.success,
+.error {  /* alert text color, padding & margins*/
+  color:black;
+  padding: 5px;
+  margin: 0px 0 0px 0;
+}
+.success {
+  background-color:rgb(157, 238, 157) /* alert success - label background */
+}
+.error {
+  background-color:orangered;  /* label background alert color*/
+}
+h1 {  /* tile: Family To-do List*/
+ text-align: center;
+ color:orangered
+ 
+}
+#job,  #task1, #date1, #date, #subtext, #when1, #who, #worker1{  /* this is outside Label  and list header text*/
+ font-family: cursive;
+ color:orangered
+ 
+}
+
+#todo-list, #task,  #date, #worker {  /* this is inside label & list text*/
+ font-family: cursive;
+ color:blue;
+}
+ 
+h1 {
+  font-family: cursive;  /* This is the title header */ 
+}
+
+#line1 {  
+  border-top: 3px dashed blue; /* this is the hr (line break)*/
+  
+}
